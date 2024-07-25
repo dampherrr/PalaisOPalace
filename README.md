@@ -1,13 +1,14 @@
-![PaleoPalace](/PaleoPalace/my-react-app/client/assets/media/pictures/LogoWithoutBack.png)
+![PaleoPalace](./client/assets/media/pictures/LogoWithoutBack.png)
 
-# Palais Ô Palace
+# 🪨 Palais Ô Palace 🐗
+## :house: C'est pas moderne, c'est préhisto-chic ! ✨
 
 ## 📥 Installation
 
 1. Clonez le dépôt :
 
    ```sh
-   git clone git@github.com:dampherrr/TemplateReact.git
+   git clone git@github.com:dampherrr/PalaisOPalace.git
    ```
 
 2. Installez les dépendances :
