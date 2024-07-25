@@ -14,7 +14,6 @@
 2. Installez les dépendances :
 
    ```sh
-   cd my-react-app
    npm install
    ```
 
@@ -57,7 +56,7 @@ Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 - **concurrently** : Utilitaire pour exécuter plusieurs commandes npm en parallèle.
 - **npm-run-all** : Utilitaire pour exécuter plusieurs scripts npm en séquence ou en parallèle.
 
-## ✍ Créateur
+## ✍ Créateurs
 
 - [antoinefouga <br><img src="https://avatars.githubusercontent.com/antoinefouga" alt="antoinefouga" width="100" height="100">
 ](https://github.com/antoinefouga)  
