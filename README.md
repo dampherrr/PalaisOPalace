@@ -64,7 +64,7 @@ Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 - [Dampherrr <br><img src="https://avatars.githubusercontent.com/dampherrr" alt="Dampherrr" width="100" height="100">
 ](https://github.com/dampherrr)  
 - [geoffpech <br><img src="https://avatars.githubusercontent.com/geoffpech" alt="geoffpech" width="100" height="100">
-](https://github.com/dampherrr)  
+](https://github.com/geoffpech)  
 - [MathieuREY4 <br><img src="https://avatars.githubusercontent.com/MathieuREY4" alt="MathieuREY4" width="100" height="100">
 ](https://github.com/MathieuREY4)  
 - [PixelKata <br><img src="https://avatars.githubusercontent.com/PixelKata" alt="PixelKata" width="100" height="100">
