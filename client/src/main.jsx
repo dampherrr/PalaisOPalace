@@ -4,12 +4,19 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import getGrotte from "./services/request";
 
 import App from "./App";
+import Products from "./pages/Products";
 
 const router = createBrowserRouter([
-  { path: "/",
+  {
+    path: "/",
     element: <App />,
-    loader: getGrotte,
-   
+    children: [
+      {
+        path: "/Products",
+        element: <Products />,
+        loader: getGrotte,
+      },
+    ],
   },
 ]);
 

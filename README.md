@@ -1,6 +1,7 @@
 ![PaleoPalace](./client/assets/media/pictures/LogoWithoutBack.png)
 
 # 🪨 Palais Ô Palace 🐗
+
 ## :house: C'est pas moderne, c'est préhisto-chic ! ✨
 
 ## 📥 Installation
@@ -43,6 +44,7 @@ Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 - **styled-components** : Bibliothèque pour écrire des CSS dans vos composants JavaScript, offrant un style dynamique et modulaire.
 - **prop-types** : Utilitaire pour vérifier les types des props passées aux composants, améliorant ainsi la robustesse et la maintenance du code.
 - **sass** : Moteur de prétraitement CSS qui vous permet d'utiliser des fonctionnalités comme des variables, des imbrications et des mixins.
+- **Keen Slider**: Un puissant et flexible slider/carousel JavaScript sans dépendances, offrant des performances élevées et une personnalisation aisée pour une expérience utilisateur fluide sur toutes les plateformes.
 
 ### `/server`
 
