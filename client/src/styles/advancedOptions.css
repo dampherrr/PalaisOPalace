@@ -1,4 +1,4 @@
-.select-container {
+.select-container-option {
   background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
@@ -68,4 +68,18 @@ select {
 }
 input {
   margin-right: 1rem;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.images-container img {
+  max-width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

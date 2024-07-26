@@ -17,7 +17,6 @@ export default function Navbar() {
           <li>Inscription</li>
         </ul>
       </div>
-      <AdvancedOptions />
     </nav>
   );
 }
