@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900");
+
 :root {
   --font-color: #ffffff;
   --background-color: #0d1d31;
@@ -10,6 +11,7 @@
   --shadow-color: rgba(0, 0, 0, 0.5);
   --font-family: "Poppins", sans-serif;
 }
+
 * {
   font-family: var(--font-family);
   box-sizing: border-box;
@@ -17,11 +19,97 @@
   margin: 0;
 }
 
+
+body.app-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 body {
+
   background: radial-gradient(
     ellipse at bottom,
     var(--background-color) 0%,
     var(--background-color-gradient) 100%
   );
+
+  margin: 0;
   z-index: -10;
+}
+
+/* NAVBAR */
+.menu {
+  z-index: 10;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  min-height: 200vh;
+  padding: 6rem 1rem;
+}
+
+/* CONTENT */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  z-index: 200;
+}
+
+.container-body {
+  position: absolute;
+  top: 500px;
+  width: 80vh;
+  left: 590px;
+  z-index: 100000000000000;
+  margin: 0 auto;
+}
+
+.container-body > h1 {
+  font-size: 3rem;
+  margin: 0 auto;
+  text-shadow: 2px 2px 2px #0c0d13;
+}
+
+.container-body > p {
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 2px #0c0d13;
+}
+
+.select-container {
+  position: absolute;
+  z-index: 10000000000000;
+  box-shadow: 2px 2px 2px 2px #bababa;
+  border-radius: 16px;
+  padding: 0.5rem;
+  top: 30px;
+  left: 1800px;
+  color: black;
+}
+
+.select-container > option {
+  color: black;
+}
+
+.content {
+  margin-top: 20px; /* Adjust this as needed to create space between elements */
+  width: 80%;
+}
+
+.sayHello {
+  color: var(--font-color);
+  font-family: var(--font-family);
+  font-size: 3em;
 }
