@@ -10,7 +10,7 @@ const Night = () => {
   useEffect(() => {
     const createStars = () => {
       const count = 500;
-      const scene = document.querySelector(".night-scene .scene");
+      const scene = document.querySelector(".night-scene");
       if (scene) {
         for (let i = 0; i < count; i++) {
           const star = document.createElement("i");
@@ -36,7 +36,7 @@ const Night = () => {
   }, []);
 
   return (
-    <div className="scene">
+    <div className="night-scene">
       <div className="moon"></div>
       <img src={forest} className="forest" alt="Forest" />
       <img src={cloud1} className="cloud1" alt="Cloud 1" />
@@ -57,6 +57,19 @@ const Night = () => {
           <div className="bubble bubble6">TG!!</div>
           <div className="bubble bubble7">Ta gueuleuuuuhhh!!</div>
         </div>
+      </div>
+
+      <div className="login-container">
+        <form className="login-form">
+          <h2>Connexion</h2>
+          <label htmlFor="email">Adresse mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label htmlFor="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Se connecter</button>
+        </form>
       </div>
     </div>
   );

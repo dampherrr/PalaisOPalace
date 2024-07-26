@@ -1,0 +1,8 @@
+.elementCaroussel,
+.select-container-option {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2019/10/01/13/06/landscape-4518195_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

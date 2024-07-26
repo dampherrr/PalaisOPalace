@@ -1,7 +1,20 @@
 .Navbar {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(7, 6, 6, 0.815);
+  color: white;
+  z-index: 50;
+}
+
+.Navbar a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.LogoPoP {
+  width: 30%;
+  height: auto;
 }
 
 .Navbuttons {
@@ -17,9 +30,5 @@
   list-style: none;
   gap: 2rem;
   padding-right: 4rem;
-}
-
-.LogoPoP {
-  width: 20%;
-  height: auto;
+  margin-left: 36rem;
 }

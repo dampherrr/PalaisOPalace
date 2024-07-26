@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
-  gap: 2rem;
 }
 select {
   width: 40%;
@@ -32,7 +31,7 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  margin: 1rem;
 }
 .option-button {
   width: 25%;
@@ -51,6 +50,7 @@ select {
   justify-content: center;
   text-align: end;
   margin: 1rem 0;
+  color: white;
 }
 
 .validate {
@@ -68,4 +68,40 @@ select {
 }
 input {
   margin-right: 1rem;
+}
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.images-container div {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.images-container div:hover {
+  transform: scale(1.05);
+}
+
+.images-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.images-container p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  margin: 0;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
 }

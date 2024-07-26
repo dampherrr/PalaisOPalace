@@ -1,12 +1,11 @@
-import { useLoaderData, Link } from "react-router-dom";
-import Papa from "papaparse";
+import { Link } from "react-router-dom";
 
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 import "../styles/products.css";
 
-export default function Products() {
+function Carrousel({ data }) {
   const [sliderRef] = useKeenSlider({
     loop: true,
     rtl: false,
@@ -16,25 +15,15 @@ export default function Products() {
     },
   });
 
-  const grotteMaison = useLoaderData();
-  const parse = () =>
-    Papa.parse(grotteMaison, {
-      header: true,
-      complete: (result) => result,
-      error: (error) => console.info(error),
-    });
-
-  const { data } = parse();
-
   return (
     <>
       <div ref={sliderRef} className="keen-slider">
-        {data.map((merguez) => (
-          <div className="keen-slider__slide number-slide">
+        {data.map((item) => (
+          <div key={item.id} className="keen-slider__slide number-slide">
             <Link
               className="slider"
               style={{
-                backgroundImage: `url(${merguez.image})`,
+                backgroundImage: `url(${item.image})`,
                 backgroundSize: "cover",
                 height: "15rem",
                 width: "100%",
@@ -42,7 +31,7 @@ export default function Products() {
               }}
               to={""}
             >
-              <div className="fontSlider">{merguez.nom}</div>
+              <div className="fontSlider">{item.nom}</div>
             </Link>
           </div>
         ))}
@@ -50,3 +39,5 @@ export default function Products() {
     </>
   );
 }
+
+export default Carrousel;
