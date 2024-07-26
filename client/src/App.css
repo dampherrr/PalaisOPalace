@@ -28,16 +28,14 @@ body.app-body {
 }
 
 body {
-
   background: radial-gradient(
     ellipse at bottom,
     var(--background-color) 0%,
     var(--background-color-gradient) 100%
   );
-
-  margin: 0;
   z-index: -10;
 }
+
 
 /* NAVBAR */
 .menu {
@@ -68,25 +66,7 @@ a {
   z-index: 200;
 }
 
-.container-body {
-  position: absolute;
-  top: 500px;
-  width: 80vh;
-  left: 590px;
-  z-index: 100000000000000;
-  margin: 0 auto;
-}
 
-.container-body > h1 {
-  font-size: 3rem;
-  margin: 0 auto;
-  text-shadow: 2px 2px 2px #0c0d13;
-}
-
-.container-body > p {
-  font-size: 1.5rem;
-  text-shadow: 2px 2px 2px #0c0d13;
-}
 
 .select-container {
   position: absolute;
@@ -108,8 +88,4 @@ a {
   width: 80%;
 }
 
-.sayHello {
-  color: var(--font-color);
-  font-family: var(--font-family);
-  font-size: 3em;
-}
+
