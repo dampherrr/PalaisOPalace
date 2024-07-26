@@ -4,6 +4,12 @@
 
 ## 🏠 C'est pas moderne, c'est préhisto-chic ! ✨
 
+### Description
+
+Dans le cadre d'un **Hackathon**, nous avons réalisé un projet de la conception à la finalité en 24 heures, sur la vente immobilière de grottes au temps des hommes des cavernes. La valeur monétaire est en marcassinsmoutes et en sandwiches à la fraise. 🐗🥪🍓
+
+
+
 ## 📥 Installation
 
 1. Clonez le dépôt :
@@ -30,6 +36,9 @@ Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 
 ## 🗃️ Data
 
+Nous avons utilisé le paquet NPM: `Papaparse` est utiliser l'URL (*Google Sheet*) comme API.
+
+Voici le contenu:
 
 - [Fichier CSV <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUvSGiY-TKfNJFeOiubslXK0COYfEvmW0EeA&s" alt="CSV" width="100">](./client/src/divers/Grotte%20-%20Feuille%201.csv)
 
