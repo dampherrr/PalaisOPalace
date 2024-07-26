@@ -22,7 +22,7 @@ export default function AdvancedOptions() {
   const filteredType = data.filter((item) =>
     item.Type.toLowerCase().includes(search.toLowerCase())
   );
-
+  // const filteredPrice = data.filter((item) => item.prix.includes);
   // filtre
   console.info("depuis data", data);
   console.info("depuis result", filteredType);
