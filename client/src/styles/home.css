@@ -1,0 +1,28 @@
+.elementCaroussel,
+.select-container-option {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -20;
+}
+
+.elementCaroussel::before,
+.select-container-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2019/10/01/13/06/landscape-4518195_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px); /* Ajuste le niveau de flou selon tes besoins */
+  z-index: -1;
+}
+
+.elementCaroussel,
+.select-container-option {
+  position: relative;
+  z-index: 0;
+}

@@ -1,0 +1,39 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.keen-slider {
+  display: flex;
+  top: 8rem;
+}
+
+[class^="number-slide"],
+[class*=" number-slide"] {
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.keen-slider .number-slide {
+  content: "";
+}
+.slider {
+  color: rgb(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-style: none;
+
+  background-size: cover;
+  height: 15rem;
+  width: 100%;
+  z-index: 10;
+}

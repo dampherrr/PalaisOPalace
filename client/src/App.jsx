@@ -1,35 +1,15 @@
-import { useLoaderData } from "react-router-dom";
 import React from "react";
-import Papa from "papaparse";
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import "./App.css";
 
-function App() {
-  
-  const grotteMaison = useLoaderData();
-
-  const parse = () =>
-    Papa.parse(grotteMaison, {
-      header: true,
-      complete: (result) => result,
-      error: (error) => console.info(error),
-    });
-
-  const { data } = parse()
-
-  console.info(data);
-
+export default function App() {
   return (
     <>
-      <h1>coucou</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae
-        iste corporis vero ut exercitationem dolorem voluptatem rerum voluptates
-        repudiandae, corrupti sequi asperiores nisi voluptatibus earum fugit
-        nobis eos nesciunt!
-      </p>
-      
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 }
-
-export default App;
