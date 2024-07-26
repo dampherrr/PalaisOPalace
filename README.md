@@ -1,4 +1,4 @@
-![PaleoPalace](./client/assets/media/pictures/LogoWithoutBack.png)
+![PaleoPalace](./client/src/assets/media/pictures/LogoWithoutBack.png)
 
 # 🪨 Palais Ô Palace 🐗
 
