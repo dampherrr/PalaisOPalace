@@ -1,0 +1,26 @@
+.Navbar {
+  display: flex;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.Navbuttons {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+.Log {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  padding-right: 5rem;
+}
+
+.LogoPoP {
+  width: 20%;
+  height: auto;
+}

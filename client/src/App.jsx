@@ -1,9 +1,29 @@
+import { useLoaderData } from "react-router-dom";
 import React, { useState } from "react";
+import Papa from "papaparse";
+
 import Light from "./components/Light";
 import Night from "./components/Night";
+import Navbar from "./components/Navbar";
+
 import "./App.css";
 
-function App() {
+
+
+export default function App() {
+  const grotteMaison = useLoaderData();
+
+  const parse = () =>
+    Papa.parse(grotteMaison, {
+      header: true,
+      complete: (result) => result,
+      error: (error) => console.info(error),
+    });
+
+  const { data } = parse();
+
+  console.info(data);
+
   const [currentScene, setCurrentScene] = useState("light");
 
   const handleSceneChange = (event) => {
@@ -11,7 +31,11 @@ function App() {
   };
 
   return (
-    <div
+    <>
+      <Navbar />
+
+      <h1>coucou</h1>
+      <div
       className={`app-body ${
         currentScene === "light" ? "light-body" : "night-body"
       }`}
@@ -40,7 +64,9 @@ function App() {
         </p>
       </div>
     </div>
+    </>
+
   );
 }
 
-export default App;
+ 
