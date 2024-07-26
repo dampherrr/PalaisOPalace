@@ -2,7 +2,7 @@
 
 # 🪨 Palais Ô Palace 🐗
 
-## :house: C'est pas moderne, c'est préhisto-chic ! ✨
+## 🏠 C'est pas moderne, c'est préhisto-chic ! ✨
 
 ## 📥 Installation
 
@@ -28,9 +28,102 @@
 
 Ouvrez votre navigateur et accédez à `http://localhost:3000`.
 
+## 🗃️ Data
+
+
+- [Fichier CSV <br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUvSGiY-TKfNJFeOiubslXK0COYfEvmW0EeA&s" alt="CSV" width="100">](./client/src/divers/Grotte%20-%20Feuille%201.csv)
+
+
+
+
+## 🖼️ Design
+
+- [Fichier Figma <br><img src="https://s3-alpha.figma.com/hub/file/1166690750/85f69649-5387-44c2-ba45-81ae13812e36-cover.png" alt="Figma" width="100" height="100">
+](./client/src/divers/PalaisOPalace.fig)
+
+- [Brainstorm <br><img src="./client/src/divers/Screen1.png" alt="Screen1" height="100">](./client/src/divers/Screen1.png)
+
+- [Logo <br><img src="./client/src/divers/Screen2.png" alt="Screen2" height="100">](./client/src/divers/Screen2.png)
+
 ## 📂 Structure du projet
 
 ```java
+PalaisOPalace/
+├── client/
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── data/
+│   │   │   │   └── datajs/
+│   │   │   ├── Images/
+│   │   │   │   └── Logo.svg
+│   │   │   ├── media/
+│   │   │   │   ├── icons/
+│   │   │   │   │   ├── Logo.svg
+│   │   │   │   │   └── moon.svg
+│   │   │   │   ├── pictures/
+│   │   │   │   │   ├── Background.jpg
+│   │   │   │   │   ├── chasseur.png
+│   │   │   │   │   ├── cloud1.png
+│   │   │   │   │   ├── cloud2.png
+│   │   │   │   │   ├── cloud3.png
+│   │   │   │   │   ├── fire-torch-png.webp
+│   │   │   │   │   ├── forest.png
+│   │   │   │   │   ├── grotte.webp
+│   │   │   │   │   ├── Logo.png
+│   │   │   │   │   ├── LogoWithoutBack.png
+│   │   │   │   │   └── marcassin.png
+│   │   ├── components/
+│   │   │   ├── AdvancedOptions.jsx
+│   │   │   ├── Carrousel.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Night.jsx
+│   │   ├── context/
+│   │   ├── divers/
+│   │   │   ├── Grotte - Feuille 1.csv
+│   │   │   ├── PalaisOPalace.fig
+│   │   │   ├── Screen1.png
+│   │   │   └── Screen2.png
+│   │   ├── pages/
+│   │   │   ├── Connexion.jsx
+│   │   │   ├── Description.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Inscription.jsx
+│   │   │   └── Search.jsx
+│   │   ├── services/
+│   │   │   └── request.js
+│   │   ├── styles/
+│   │   │   ├── advancedOptions.css
+│   │   │   ├── home.css
+│   │   │   ├── inscription.css
+│   │   │   ├── navbar.css
+│   │   │   ├── night.css
+│   │   │   └── products.css
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.html
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   └── vite.config.js
+├── server/
+│   ├── public/
+│   │   ├── assets/
+│   │   │   ├── data/
+│   │   │   │   └── datajs/
+│   │   │   ├── icons/
+│   │   │   └── pictures/
+│   ├── .env
+│   ├── .env.sample
+│   ├── index.js
+│   ├── package-lock.json
+│   └── package.json
+├── .eslintrc.cjs
+├── .gitignore
+├── db.json
+├── package-lock.json
+├── package.json
+└── README.md
 
 ```
 
