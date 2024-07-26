@@ -24,10 +24,10 @@ function Carrousel({ data }) {
               className="slider"
               style={{
                 backgroundImage: `url(${item.image})`,
-                backgroundSize: "cover",
-                height: "15rem",
-                width: "100%",
-                zIndex: 10,
+                // backgroundSize: "cover",
+                // height: "15rem",
+                // width: "100%",
+                // zIndex: 10,
               }}
               to={""}
             >
