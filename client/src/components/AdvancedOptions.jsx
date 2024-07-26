@@ -1,11 +1,31 @@
 import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
+import Papa from "papaparse";
 
 import "../styles/advancedOptions.css";
 
 export default function AdvancedOptions() {
   const [search, setSearch] = useState("");
+  const [option, selectOption] = useState("");
+  const fetechGrotte = useLoaderData();
 
-  const [troc, setTroc] = useState("");
+  const parse = () =>
+    Papa.parse(fetechGrotte, {
+      header: true,
+      complete: (result) => result,
+      error: (error) => console.info(error),
+    });
+
+  const { data } = parse();
+
+  // filtre
+  const filteredType = data.filter((item) =>
+    item.Type.toLowerCase().includes(search.toLowerCase())
+  );
+
+  // filtre
+  console.info("depuis data", data);
+  console.info("depuis result", filteredType);
 
   const validate = () => {
     if (!inputsentence || !troc) {
@@ -17,16 +37,25 @@ export default function AdvancedOptions() {
   const searchRequest = (event) => {
     setSearch(event.target.value);
   };
-
+  console.info("depuis searc", search);
   return (
     <div className="select-container">
       <div className="input-selection">
-        <input
-          type="text"
-          placeholder="Input sentence"
-          maxLength={30}
-          onChange={searchRequest}
-        />
+        <select>
+          <option value="Trou">Trou</option>
+          <option value="Grotte fienté">Grotte fienté</option>
+          <option value="Trou sans fenêtre">Trou sans fenêtre</option>
+          <option value="Caverne Familial">Caverne Familial</option>
+          <option value="GrotteMoute">GrotteMoute</option>
+          <option value="Fosse Communes">Fosse Communes</option>
+        </select>
+        <select>
+          <option value="fourchette-A">2 à 20 gourdins </option>
+          <option value="fourchette-B">25 à 50 gourdins</option>
+          <option value="fourchette-C">51 à 65 gourdins</option>
+          <option value="fourchette-D">100 à 135 gourdins</option>
+        </select>
+
         <input
           type="text"
           placeholder="TROC*"
@@ -35,14 +64,13 @@ export default function AdvancedOptions() {
         />
       </div>
       <p className="devise">*Uniquement en 🐗 ou 🥪</p>
+
       <div className="container-options-button">
-        <button
-          type="button"
-          className="option-button"
-          onClick={() => selectOptions("Trou")}
-        >
-          Trou
-        </button>
+        <div className="option-button">
+          <input type="checkbox" onClick={() => selectOptions("Trou")} />
+          <label htmlFor="Trou"> TROU</label>
+        </div>
+
         <button
           type="button"
           className="option-button"

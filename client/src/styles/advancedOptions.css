@@ -3,7 +3,6 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* text-align: center; */
 }
 .input-selection {
   display: flex;
@@ -11,7 +10,7 @@
   margin-bottom: 10px;
   gap: 2rem;
 }
-.input-selection > input:nth-child(1) {
+select {
   width: 40%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -66,4 +65,7 @@
 }
 .validate:hover {
   background: #a86e03;
+}
+input {
+  margin-right: 1rem;
 }
