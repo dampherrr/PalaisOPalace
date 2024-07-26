@@ -47,7 +47,7 @@ Voici le contenu:
 
 ## 🖼️ Design
 
-- [Fichier Figma <br><img src="https://s3-alpha.figma.com/hub/file/1166690750/85f69649-5387-44c2-ba45-81ae13812e36-cover.png" alt="Figma" width="100" height="100">
+- [Fichier Figma <br><img src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/3000/figma-logo-512.png" alt="Figma" width="100" height="100">
 ](./client/src/divers/PalaisOPalace.fig)
 
 - [Brainstorm <br><img src="./client/src/divers/Screen1.png" alt="Screen1" height="100">](./client/src/divers/Screen1.png)
@@ -140,25 +140,26 @@ PalaisOPalace/
 
 ### `/client`
 
-- **react-router-dom** : Bibliothèque de routage pour React qui permet de gérer la navigation entre les différentes pages de l'application.
-- **axios** : Client HTTP basé sur les promesses pour effectuer des requêtes vers des API externes ou internes.
-- **@tanstack/react-query** : Bibliothèque pour la gestion des états serveur, simplifiant le processus de fetch et de synchronisation des données.
-- **styled-components** : Bibliothèque pour écrire des CSS dans vos composants JavaScript, offrant un style dynamique et modulaire.
-- **prop-types** : Utilitaire pour vérifier les types des props passées aux composants, améliorant ainsi la robustesse et la maintenance du code.
-- **sass** : Moteur de prétraitement CSS qui vous permet d'utiliser des fonctionnalités comme des variables, des imbrications et des mixins.
-- **Keen Slider**: Un puissant et flexible slider/carousel JavaScript sans dépendances, offrant des performances élevées et une personnalisation aisée pour une expérience utilisateur fluide sur toutes les plateformes.
+- **[react-router-dom](https://www.npmjs.com/package/react-router-dom)** : Bibliothèque de routage pour React qui permet de gérer la navigation entre les différentes pages de l'application.
+- **[axios](https://www.npmjs.com/package/axios)** : Client HTTP basé sur les promesses pour effectuer des requêtes vers des API externes ou internes.
+- **[@tanstack/react-query](https://www.npmjs.com/package/@tanstack/react-query)** : Bibliothèque pour la gestion des états serveur, simplifiant le processus de fetch et de synchronisation des données.
+- **[styled-components](https://www.npmjs.com/package/styled-components)** : Bibliothèque pour écrire des CSS dans vos composants JavaScript, offrant un style dynamique et modulaire.
+- **[prop-types](https://www.npmjs.com/package/prop-types)** : Utilitaire pour vérifier les types des props passées aux composants, améliorant ainsi la robustesse et la maintenance du code.
+- **[sass](https://www.npmjs.com/package/sass)** : Moteur de prétraitement CSS qui vous permet d'utiliser des fonctionnalités comme des variables, des imbrications et des mixins.
+- **[Keen Slider](https://www.npmjs.com/package/keen-slider)** : Un puissant et flexible slider/carousel JavaScript sans dépendances, offrant des performances élevées et une personnalisation aisée pour une expérience utilisateur fluide sur toutes les plateformes.
+- **[papaparse](https://www.npmjs.com/package/papaparse)** : Bibliothèque pour parser les fichiers CSV en JavaScript, facilitant l'importation et l'analyse de données CSV.
 
 ### `/server`
 
-- **express** : Framework web minimaliste et flexible pour Node.js, utilisé pour créer des applications web et des API robustes.
-- **json-server** : Serveur RESTful mock pour rapidement simuler une API avec un fichier JSON.
-- **cors** : Middleware pour Express permettant de gérer les problèmes de sécurité liés aux politiques de partage de ressources entre origines multiples (CORS).
-- **dotenv** : Module qui charge les variables d'environnement à partir d'un fichier `.env` pour les garder hors du code source.
-- **mongoose** : Bibliothèque de modélisation d'objets pour MongoDB, facilitant l'interaction avec la base de données.
-- **body-parser** : Middleware pour Express permettant d'analyser les corps des requêtes HTTP entrantes, supportant différents formats comme JSON.
-- **nodemon** : Outil qui aide à développer des applications basées sur Node.js en redémarrant automatiquement le serveur lorsqu'un fichier change.
-- **concurrently** : Utilitaire pour exécuter plusieurs commandes npm en parallèle.
-- **npm-run-all** : Utilitaire pour exécuter plusieurs scripts npm en séquence ou en parallèle.
+- **[express](https://www.npmjs.com/package/express)** : Framework web minimaliste et flexible pour Node.js, utilisé pour créer des applications web et des API robustes.
+- **[json-server](https://www.npmjs.com/package/json-server)** : Serveur RESTful mock pour rapidement simuler une API avec un fichier JSON.
+- **[cors](https://www.npmjs.com/package/cors)** : Middleware pour Express permettant de gérer les problèmes de sécurité liés aux politiques de partage de ressources entre origines multiples (CORS).
+- **[dotenv](https://www.npmjs.com/package/dotenv)** : Module qui charge les variables d'environnement à partir d'un fichier `.env` pour les garder hors du code source.
+- **[mongoose](https://www.npmjs.com/package/mongoose)** : Bibliothèque de modélisation d'objets pour MongoDB, facilitant l'interaction avec la base de données.
+- **[body-parser](https://www.npmjs.com/package/body-parser)** : Middleware pour Express permettant d'analyser les corps des requêtes HTTP entrantes, supportant différents formats comme JSON.
+- **[nodemon](https://www.npmjs.com/package/nodemon)** : Outil qui aide à développer des applications basées sur Node.js en redémarrant automatiquement le serveur lorsqu'un fichier change.
+- **[concurrently](https://www.npmjs.com/package/concurrently)** : Utilitaire pour exécuter plusieurs commandes npm en parallèle.
+- **[npm-run-all](https://www.npmjs.com/package/npm-run-all)** : Utilitaire pour exécuter plusieurs scripts npm en séquence ou en parallèle.
 
 ## ✍ Créateurs
 
